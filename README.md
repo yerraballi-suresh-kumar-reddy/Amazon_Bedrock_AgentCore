@@ -2,12 +2,12 @@
 
 Credits - https://strandsagents.com/latest/documentation/docs/user-guide/deploy/deploy_to_bedrock_agentcore/
 
-# Launch EC2 – Ubuntu 
+## Launch EC2 – Ubuntu 
 
 - Take higher machine size as docker takes time if the size of the ubuntu is small
 - Add IAM role to access services such as Amazon Bedrock, ECS, etc 
 
-# Run these commands
+## Run these commands
 
 ✅ Step 1: Update System
 sudo apt update
@@ -72,7 +72,7 @@ sudo systemctl start docker
 🚀 5. Check Docker Version
 docker --version
 
-# Now Install AWS CLI v2 (not installed currently)
+## Now Install AWS CLI v2 (not installed currently)
 
 Run these EXACT commands depending on CPU architecture.
 
@@ -86,13 +86,13 @@ Try to check if it has the access
 
 aws s3 ls 
 
-# Upload the given files on Ubuntu
+## Upload the given files on Ubuntu
 
  - requirements.txt
  - docker
  - build.sh
 
-Note: Add these details in 
+## Note: Modify the files as per the need such as in build.sh need to replace the account id for AWS
 
 - ACCOUNT=""
 - REGION="ap-south-1"
