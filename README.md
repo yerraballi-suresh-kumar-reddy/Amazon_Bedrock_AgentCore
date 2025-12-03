@@ -129,7 +129,7 @@ http://<EC2_PUBLIC_IP>:8501
 
 # Agent-2 call for trip recommendation
 
-<img width="940" height="465" alt="image" src="https://github.com/user-attachments/assets/a287f55e-d15e-4089-af43-c6cd66cd2d68" />
+<img width="606" height="775" alt="image" src="https://github.com/user-attachments/assets/03da8d4e-f3ce-4c6a-a63c-4bac6b420472" />
 
 # Direct basic Arithmetic question to see if it goes to agents
 
