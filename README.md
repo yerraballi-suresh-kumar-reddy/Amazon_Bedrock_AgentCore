@@ -100,8 +100,17 @@ Note: Add these details in
 
 REPO name should be same as ECR created name
 
+On AWS Console -> Create Amazon ECR Repo and Create Amazon Bedrock AgentCore Host Agent/Tool 
 
-Now run this for Streamlit App to get the response
+<img width="1902" height="163" alt="image" src="https://github.com/user-attachments/assets/4a16135b-2125-4302-a9f5-db9eb17bee37" />
+
+<img width="1880" height="427" alt="image" src="https://github.com/user-attachments/assets/2d944d6c-5b0f-489c-a5bf-b34fdf3b40b7" />
+
+Run ./build.sh on Ubuntu-> it will push the image to ECR
+
+Attach the ECR image with AgentCore Host Agent by browsing it
+
+Invoke the code using Streamlit
 
 pip install fastapi uvicorn boto3 streamlit
 
