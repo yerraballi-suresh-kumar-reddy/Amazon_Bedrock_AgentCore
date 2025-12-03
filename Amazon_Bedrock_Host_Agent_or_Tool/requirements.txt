@@ -1,0 +1,10 @@
+boto3>=1.34.0
+botocore>=1.34.0
+fastapi>=0.68.0
+uvicorn[standard]>=0.15.0
+pydantic>=1.8.0
+httpx
+bedrock-agentcore
+strands-agents
+requests>=2.25.0
+
