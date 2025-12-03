@@ -2,7 +2,10 @@
 
 Credits - https://strandsagents.com/latest/documentation/docs/user-guide/deploy/deploy_to_bedrock_agentcore/
 
-# Launch EC2 – Ubuntu and add IAM role to access services such as Amazon Bedrock, ECS, etc 
+# Launch EC2 – Ubuntu 
+
+- Take higher machine size as docker takes time if the size of the ubuntu is small
+- Add IAM role to access services such as Amazon Bedrock, ECS, etc 
 
 # Run these commands
 
@@ -69,6 +72,19 @@ sudo systemctl start docker
 🚀 5. Check Docker Version
 docker --version
 
+# Now Install AWS CLI v2 (not installed currently)
+
+Run these EXACT commands depending on CPU architecture.
+
+👉 For x86_64 machine (most EC2 instances):
+cd /tmp
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+Try to check if it has the access
+
+aws s3 ls 
 
 # Upload the given files on Ubuntu
 
@@ -83,5 +99,34 @@ Note: Add these details in
 - REPO="agentcoredemo"
 
 REPO name should be same as ECR created name
+
+
+Now run this for Streamlit App to get the response
+
+pip install fastapi uvicorn boto3 streamlit
+
+To run
+
+streamlit run invoke_agent.py --server.address 0.0.0.0 --server.port 8501
+
+On web browser
+
+http://<EC2_PUBLIC_IP>:8501
+
+
+# Agent-1 call for product recommendation
+
+<img width="940" height="449" alt="image" src="https://github.com/user-attachments/assets/5848d9aa-386f-4863-8791-aaf500ac7b08" />
+
+# Agent-2 call for trip recommendation
+
+<img width="940" height="465" alt="image" src="https://github.com/user-attachments/assets/a287f55e-d15e-4089-af43-c6cd66cd2d68" />
+
+# Direct basic Arithmetic question to see if it goes to agents
+
+<img width="940" height="637" alt="image" src="https://github.com/user-attachments/assets/761f960c-12c1-4b03-a077-c483f58fa9da" />
+
+
+
 
 
