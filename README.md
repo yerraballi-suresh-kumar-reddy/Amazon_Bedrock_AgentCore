@@ -133,7 +133,7 @@ http://<EC2_PUBLIC_IP>:8501
 
 # Direct basic Arithmetic question to see if it goes to agents
 
-<img width="940" height="637" alt="image" src="https://github.com/user-attachments/assets/761f960c-12c1-4b03-a077-c483f58fa9da" />
+<img width="1077" height="651" alt="image" src="https://github.com/user-attachments/assets/9feb4df5-bcf7-413a-aa98-d832a8e4b034" />
 
 
 
